@@ -1,8 +1,6 @@
 # COMP-S350
 Software Engineering: Year 3 CompSci group project
 
-~ Welcome~
-
 Project Scope:
 
 1. Project Report
