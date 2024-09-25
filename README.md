@@ -12,3 +12,6 @@ c) Software implementation
 d) Software validation/testing
 e) Software evolution 
 
+The project report is of not more than 1000 words (Excluding Source Code, References and Appendix)
+o Source Codes must be submitted as an accessible GitHub with a guide on how to install/run it (put the 
+GitHub link as the first line of your report).
