@@ -1,5 +1,5 @@
 # COMP-S350F
-Software Engineering: Year 3 CompSci Group Project
+Software Engineering: Year 3 CompSci Group Project.
 
 Project Scope:
 
