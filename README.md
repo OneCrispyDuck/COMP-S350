@@ -1,5 +1,5 @@
 # COMP-S350F
-Software Engineering: Year 3 CompSci group project
+Software Engineering: Year 3 CompSci Group Project
 
 Project Scope:
 
@@ -22,4 +22,3 @@ Narrowing our topic:
 3. Food Ordering and Tracking App
 4. Airport Management System
 5. Statistical and Data Analysis Software
-
