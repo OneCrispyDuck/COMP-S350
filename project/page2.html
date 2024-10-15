@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    /* 菜单按钮样式 */
+    .menu-button {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 35px; /* 字体大小 */
+        font-weight: bold; /* 字体加粗 */
+        cursor: pointer;
+        z-index: 1000; /* 确保菜单在最上层 */
+    }
+
+    /* 搜索框容器样式 */
+    .search-container {
+        display: flex;
+        justify-content: center; /* 水平居中 */
+        padding: 10px;
+        background-color: #f0f0f0; /* 搜索框背景颜色 */
+        margin-top: 70px; /* 向下移动，避免与菜单重叠 */
+    }
+
+    .search-container input[type="text"] {
+        width: 300px;       /* 搜索框宽度 */
+        padding: 5px 10px;  /* 内边距 */
+        font-size: 16px;    /* 字体大小 */
+        border: 1px solid #ccc;  /* 边框 */
+        border-radius: 4px;      /* 圆角 */
+    }
+
+    .search-container button {
+        padding: 6px 12px;
+        margin-left: 5px;
+        font-size: 16px;
+        background-color: #4CAF50; /* 按钮背景颜色 */
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .search-container button:hover {
+        background-color: #45a049;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center; /* 水平居中 */
+        background-color: #ffffff;  /* 背景颜色 */
+        padding: 10px;
+    }
+
+    /* 按钮样式 */
+    .nav-button {
+        background-color: transparent; /* 透明背景 */
+        border: none;                  /* 无边框 */
+        margin: 0 10px;                /* 按钮间距 */
+        cursor: pointer;               /* 鼠标指针样式 */
+        width: 100px;                  /* 按钮固定宽度 */
+        height: 120px;                 /* 增加高度以容纳文字 */
+        display: flex;
+        flex-direction: column;        /* 垂直排列 */
+        align-items: center;           /* 水平居中 */
+    }
+
+    .nav-button img {
+        width: 65px;  /* 图片宽度 */
+        height: 65px; /* 图片高度 */
+        object-fit: cover;
+    }
+
+    .nav-button span {
+        margin-top: 5px;   /* 图片和文字之间的间距 */
+        font-size: 14px;   /* 文字大小 */
+        color: #000;       /* 文字颜色 */
+    }
+
+    .nav-button:focus {
+        outline: none; /* 去除点击时的边框 */
+    }
+
+    .nav-button:hover img {
+        transform: scale(1.1); /* 鼠标悬停时图片放大 */
+    }
+
+    /* Promotions 标题样式 */
+    .promotions-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 20px 0 10px 10px; /* 上下间距 */
+    }
+
+    /* Promotions 图片区域样式 */
+    .promotions-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* 如果图片超出一行，自动换行 */
+        padding: 0 10px; /* 左右内边距 */
+    }
+
+    .promotion-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px; /* 图片圆角 */
+    }
+
+    .promotion-item span {
+        display: block;
+        margin-top: 5px;
+        font-size: 16px;
+        color: #333;
+    }
+
+</style>
+</head>
+<body>
+
+<!-- 菜单按钮 -->
+<div class="menu-button">Menu</div>
+
+<!-- 搜索框 -->
+<div class="search-container">
+    <input type="text" placeholder="Search..." name="search">
+    <button type="submit">Search</button>
+</div>
+<!-- 顶部导航栏，包含四个按钮 -->
+<div class="navbar">
+    <button class="nav-button All-button">
+        <img src="C:\Users\Little\OneDrive - Hong Kong Metropolitan University\桌面\HKMU\Y3-1\S350F\S350F Group\project\Picture material\All.png" 
+            alt="All">
+            <span>All</span>
+    </button>
+    <button class="nav-button StapleFood-button">
+        <img src="C:\Users\Little\OneDrive - Hong Kong Metropolitan University\桌面\HKMU\Y3-1\S350F\S350F Group\project\Picture material\StapleFood.png"
+            alt="Staple Food">
+            <span>Staple Food</span>
+    </button>
+    <button class="nav-button Drinks-button">
+        <img src="C:\Users\Little\OneDrive - Hong Kong Metropolitan University\桌面\HKMU\Y3-1\S350F\S350F Group\project\Picture material\Drink.png"
+            alt="Drinks">
+            <span>Drinks</span>
+    </button>
+    <button class="nav-button Dessert-button">
+        <img src="C:\Users\Little\OneDrive - Hong Kong Metropolitan University\桌面\HKMU\Y3-1\S350F\S350F Group\project\Picture material\Cake.png"
+             alt="Dessert">
+             <span>Dessert</span>
+    </button>
+</div>
+<!-- Promotions 标题 -->
+<div class="promotions-title">Promotions</div>
+
+<!-- Promotions 图片区域 -->
+<div class="promotions-container">
+    <div class="promotion-item">
+        <img src="C:\Users\Little\OneDrive - Hong Kong Metropolitan University\桌面\HKMU\Y3-1\S350F\S350F Group\project\Picture material\promotion1.jpg" alt="Promotion 1">
+    </div>
+
+    <!-- 根据需要添加更多的 promotion-item -->
+</div>
+</body>
+</html>
