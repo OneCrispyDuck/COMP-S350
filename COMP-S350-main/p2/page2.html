@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+<link rel="stylesheet" type="text/css" href="../progress.css">
 
 <head>
     <meta charset="UTF-8">
@@ -177,7 +178,7 @@
             </button>
         </div>
 
-        <div class="messageCrollWindow" style="height:480px;width:430px;overflow:auto;margin-left:5px">
+        <div class="messageCrollWindow" style="height:500px;width:430px;overflow:auto;margin-left:5px">
             <!-- Promotions -->
             <div class="promotions-title">Promotions</div>
 
@@ -373,51 +374,56 @@
 
     </div>
     <div id="cartPage" style="  background-color: #d3d3d3;
-                                height:763;
-                                width:430;
+                                height:763px;
+                                width:430px;
                                 display: none">
-        <div id="ItemsInCart" style=" height:20px;
+        <div id="ItemsInCart" style=" height:60px;
                 width:430px;
                 display: inline-block
                 ">
             <p style="font-size:20px;
-                    ">
+                    margin: 20px 0 0 20px">
                 2 Items in cart</p>
         </div>
-        <div style=" height:450px;
+        <div id="cartCloneContainer" style=" height:450px;
                     width:400px;
                     overflow:auto;
                     margin:0 15px 0 15px;
                 ">
-            <div style=" height: 150px;
-                            width:400px">
-                <img src="..\Picture material\Cookie.png" style=" width:150px;
+
+        </div>
+
+        <!-- 被clone的 -->
+        <div id="cartClone" style=" height: 150px;
+                            width:400px;
+							display:none">
+            <img id="cartCloneImg" src="..\Picture material\Cookie.png" style=" width:150px;
                                     height:150px;
                                     float:left;
                                     ">
-                <div style="height: 150px;
+            <div style="height: 150px;
                                 width:250px;
                                 float:left
                                 ">
-                    <div style="height: 150px;
+                <div style="height: 150px;
                                     width:150px;
                                     float:left;
                                     ">
-                        <p style="margin: 30px 0 0 50px;">
-                            Cookie
-                        </p>
-                        <p style="margin: 10px 0 0 50px;">
-                            Price
-                        </p>
-                        <p style="margin: 10px 0 0 50px;">
-                            Number
-                        </p>
-                    </div>
-                    <div style="height: 150px;
+                    <p id="cartCloneName" style="margin: 30px 0 0 50px;">
+                        Cookie
+                    </p>
+                    <p id="cartClonePrice" style="margin: 10px 0 0 50px;">
+                        Price
+                    </p>
+                    <p id="cartCloneCount" style="margin: 10px 0 0 50px;">
+                        Number
+                    </p>
+                </div>
+                <div style="height: 150px;
                                     width:100px;
                                     float:left;
                                     ">
-                        <button type="button" style=" height: 30px;
+                    <button id="cartCloneBtn" type="button" style=" height: 30px;
                                                         width: 30px;
                                                         margin:60px 0 0 50px;
                                                         border-radius:50% 50% 50% 50%;
@@ -425,141 +431,14 @@
                                                         font-size:20px;
                                                         color:red;
                                                         background-color:transparent;
-                                                        ">
-                            X
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div style=" height: 150px;
-                            width:400px">
-                <img src="..\Picture material\Beef.png" style=" width:150px;
-                                    height:150px;
-                                    float:left;
-                                    ">
-                <div style="height: 150px;
-                                width:250px;
-                                float:left
-                                ">
-                    <div style="height: 150px;
-                                    width:150px;
-                                    float:left;
-                                    ">
-                        <p style="margin: 30px 0 0 50px;">
-                            Beef
-                        </p>
-                        <p style="margin: 10px 0 0 50px;">
-                            Price
-                        </p>
-                        <p style="margin: 10px 0 0 50px;">
-                            Number
-                        </p>
-                    </div>
-                    <div style="height: 150px;
-                                    width:100px;
-                                    float:left;
-                                    ">
-                        <button type="button" style=" height: 30px;
-                                                        width: 30px;
-                                                        margin:60px 0 0 50px;
-                                                        border-radius:50% 50% 50% 50%;
-                                                        border-color:red;
-                                                        font-size:20px;
-                                                        color:red;
-                                                        background-color:transparent;
-                                                        ">
-                            X
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div style=" height: 150px;
-                            width:400px">
-                <img src="..\Picture material\Cake.png" style=" width:150px;
-                                    height:150px;
-                                    float:left;
-                                    ">
-                <div style="height: 150px;
-                                width:250px;
-                                float:left
-                                ">
-                    <div style="height: 150px;
-                                    width:150px;
-                                    float:left;
-                                    ">
-                        <p style="margin: 30px 0 0 50px;">
-                            Cake
-                        </p>
-                        <p style="margin: 10px 0 0 50px;">
-                            Price
-                        </p>
-                        <p style="margin: 10px 0 0 50px;">
-                            Number
-                        </p>
-                    </div>
-                    <div style="height: 150px;
-                                    width:100px;
-                                    float:left;
-                                    ">
-                        <button type="button" style=" height: 30px;
-                                                        width: 30px;
-                                                        margin:60px 0 0 50px;
-                                                        border-radius:50% 50% 50% 50%;
-                                                        border-color:red;
-                                                        font-size:20px;
-                                                        color:red;
-                                                        background-color:transparent;
-                                                        ">
-                            X
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div style=" height: 150px;
-                            width:400px">
-                <img src="..\Picture material\Cheese.png" style=" width:150px;
-                                    height:150px;
-                                    float:left;
-                                    ">
-                <div style="height: 150px;
-                                width:250px;
-                                float:left
-                                ">
-                    <div style="height: 150px;
-                                    width:150px;
-                                    float:left;
-                                    ">
-                        <p style="margin: 30px 0 0 50px;">
-                            Cheese
-                        </p>
-                        <p style="margin: 10px 0 0 50px;">
-                            Price
-                        </p>
-                        <p style="margin: 10px 0 0 50px;">
-                            Number
-                        </p>
-                    </div>
-                    <div style="height: 150px;
-                                    width:100px;
-                                    float:left;
-                                    ">
-                        <button type="button" style=" height: 30px;
-                                                    width: 30px;
-                                                    margin:60px 0 0 50px;
-                                                    border-radius:50% 50% 50% 50%;
-                                                    border-color:red;
-                                                    font-size:20px;
-                                                    color:red;
-                                                    background-color:transparent;
-                                                    ">
-                            X
-                        </button>
-                    </div>
+                                                        " onclick="delClone(this.id)">
+                        X
+                    </button>
                 </div>
             </div>
         </div>
-
-        <div style="height: 293px;
+        <!-- 被clone的 -->
+        <div style="height: 253px;
                     width: 400px;
                     margin: 0 15px 0 15px;">
             <div style="height: 110px;
@@ -571,7 +450,7 @@
                             ">
                     <p style=" height: 110px;
                                 width:200px;
-                                margin: 30px 0 0 0;
+                                margin: 30px 0 0 50px;
                                 font-size:30px;
                                 ">
                         Total
@@ -581,10 +460,11 @@
                             width:200px;
                             float:left
                             ">
-                    <p style="height: 110px;
+                    <p id="cartPrice" style="height: 110px;
                                 width:200px;
-                                margin:30px 0 0 0;
+                                margin:30px 0 0 75px;
                                 font-size:30px;
+								color: #c9aa05;
                                 ">
                         price
                     </p>
@@ -596,7 +476,7 @@
                                 ">
                 <button type="button" style=" height: 70px;
                                         width: 300px;
-                                        margin:30px 0 0 50px;
+                                        margin:10px 0 0 50px;
                                         border-radius:30px 30px 30px 30px;
                                         font-size:30px;
                                         background-color:purple;
@@ -605,34 +485,288 @@
                                margin:0 0 5px 0; ">Order</p>
                 </button>
             </div>
-            <div style="height: 73px;
+            <div style="height: 33px;
                                 width:400px;
                                 ">
-                <button type="button" style=" height: 70px;
+                <button type="button" style=" height: 30px;
                                         width: 150px;
                                         margin:0 0 0 125px;
                                         font-size:15px;
                                         border-width: 0px;
                                         outline:none;
                                         background-color:transparent;
-                                        ">
+                                        " onclick="home_page()">
                     Back to Menu
                 </button>
             </div>
 
         </div>
+
     </div>
-    <div id="userPage" style="background-color:blue;height:763;width:430;display: none">
-        <p>bbb</p>
+    <div id="userPage" style="  background-color:#d3d3d3;
+                                height:763px;
+                                width:430px;
+                                display: none">
+        <div id="My Orders" style=" height:60px;
+                        width:430px;
+                        display: inline-block
+                        ">
+            <p style="font-size:20px;
+					margin: 20px 0 0 20px
+                    ">
+                My Orders</p>
+        </div>
+        <div style="height:100px;width:430px;">
+            <div class="root">
+                <div class="container">
+                    <ol class="progressbar">
+                        <li id="step1">Ordered</li>
+                        <li id="step2">Waiting</li>
+                        <li id="step3">Cooking</li>
+                        <li id="step4">Delivery</li>
+                        <li id="step5">Enjoy</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div id="Order Menu" style="height: 450px;
+                                    width: 400px;
+                                    overflow: auto;
+                                    margin:0 15px 0 15px;
+                                    ">
+            <div style=" height:450px;
+            width:400px;
+            overflow:auto;
+            margin:0 15px 0 15px;
+        ">
+                <div style=" height: 150px;
+                    width:400px">
+                    <img src="..\Picture material\Cookie.png" style=" width:150px;
+                            height:150px;
+                            float:left;
+                            ">
+                    <div style="height: 150px;
+                        width:250px;
+                        float:left
+                        ">
+                        <div style="height: 150px;
+                            width:150px;
+                            float:left;
+                            ">
+                            <p style="margin: 30px 0 0 50px;">
+                                Cookie
+                            </p>
+                            <p style="margin: 10px 0 0 50px;">
+                                Price
+                            </p>
+                            <p style="margin: 10px 0 0 50px;">
+                                Number
+                            </p>
+                        </div>
+                        <div style="height: 150px;
+                            width:100px;
+                            float:left;
+                            ">
+                            <button type="button" style=" height: 30px;
+                                                width: 30px;
+                                                margin:60px 0 0 50px;
+                                                border-radius:50% 50% 50% 50%;
+                                                border-color:red;
+                                                font-size:20px;
+                                                color:red;
+                                                background-color:transparent;
+                                                ">
+                                X
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div style=" height: 150px;
+                    width:400px">
+                    <img src="..\Picture material\Beef.png" style=" width:150px;
+                            height:150px;
+                            float:left;
+                            ">
+                    <div style="height: 150px;
+                        width:250px;
+                        float:left
+                        ">
+                        <div style="height: 150px;
+                            width:150px;
+                            float:left;
+                            ">
+                            <p style="margin: 30px 0 0 50px;">
+                                Beef
+                            </p>
+                            <p style="margin: 10px 0 0 50px;">
+                                Price
+                            </p>
+                            <p style="margin: 10px 0 0 50px;">
+                                Number
+                            </p>
+                        </div>
+                        <div style="height: 150px;
+                            width:100px;
+                            float:left;
+                            ">
+                            <button type="button" style=" height: 30px;
+                                                width: 30px;
+                                                margin:60px 0 0 50px;
+                                                border-radius:50% 50% 50% 50%;
+                                                border-color:red;
+                                                font-size:20px;
+                                                color:red;
+                                                background-color:transparent;
+                                                ">
+                                X
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div style=" height: 150px;
+                    width:400px">
+                    <img src="..\Picture material\Cake.png" style=" width:150px;
+                            height:150px;
+                            float:left;
+                            ">
+                    <div style="height: 150px;
+                        width:250px;
+                        float:left
+                        ">
+                        <div style="height: 150px;
+                            width:150px;
+                            float:left;
+                            ">
+                            <p style="margin: 30px 0 0 50px;">
+                                Cake
+                            </p>
+                            <p style="margin: 10px 0 0 50px;">
+                                Price
+                            </p>
+                            <p style="margin: 10px 0 0 50px;">
+                                Number
+                            </p>
+                        </div>
+                        <div style="height: 150px;
+                            width:100px;
+                            float:left;
+                            ">
+                            <button type="button" style=" height: 30px;
+                                                width: 30px;
+                                                margin:60px 0 0 50px;
+                                                border-radius:50% 50% 50% 50%;
+                                                border-color:red;
+                                                font-size:20px;
+                                                color:red;
+                                                background-color:transparent;
+                                                ">
+                                X
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div style=" height: 150px;
+                    width:400px">
+                    <img src="..\Picture material\Cheese.png" style=" width:150px;
+                            height:150px;
+                            float:left;
+                            ">
+                    <div style="height: 150px;
+                        width:250px;
+                        float:left
+                        ">
+                        <div style="height: 150px;
+                            width:150px;
+                            float:left;
+                            ">
+                            <p style="margin: 30px 0 0 50px;">
+                                Cheese
+                            </p>
+                            <p style="margin: 10px 0 0 50px;">
+                                Price
+                            </p>
+                            <p style="margin: 10px 0 0 50px;">
+                                Number
+                            </p>
+                        </div>
+                        <div style="height: 150px;
+                            width:100px;
+                            float:left;
+                            ">
+                            <button type="button" style=" height: 30px;
+                                            width: 30px;
+                                            margin:60px 0 0 50px;
+                                            border-radius:50% 50% 50% 50%;
+                                            border-color:red;
+                                            font-size:20px;
+                                            color:red;
+                                            background-color:transparent;
+                                            ">
+                                X
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="totalPrice&backToMenu" style="height: 160px;
+                                                width: 430px;">
+            <div style="height: 110px;
+            width:400px;
+            ">
+                <div style="height: 110px;
+                width:200px;
+                float:left
+                ">
+                    <p style=" height: 110px;
+                    width:200px;
+                    margin: 50px 0 0 60px;
+                    font-size:30px;
+                    ">
+                        Total
+                    </p>
+                </div>
+                <div style="height: 110px;
+                width:200px;
+                float:left
+                ">
+                    <p style="height: 110px;
+                    width:200px;
+                    margin:50px 0 0 60px;
+                    font-size:30px;
+                    ">
+                        price
+                    </p>
+                </div>
+            </div>
+            <div style="height: 33px;
+                                width:400px;
+                                ">
+                <button type="button" style=" height: 30px;
+                                        width: 150px;
+                                        margin:10px 0 0 140px;
+                                        font-size:15px;
+                                        border-width: 0px;
+                                        outline:none;
+                                        background-color:transparent;
+										" onclick="home_page()" ;>
+                    Back to Menu
+                </button>
+            </div>
+        </div>
     </div>
     <div id="btnBar"
         style="height: 80px;width: 430px;margin-bottom: auto;display:flex;justify-content:space-evenly;margin-top: 15px">
-        <button type="button" style="width: 50px;height: 50px;background-color:transparent;padding:0px;border-width:1px;" onclick="home_page()">
+        <button type="button"
+            style="width: 50px;height: 50px;background-color:transparent;padding:0px;border-width:1px;"
+            onclick="home_page()">
             <img id="homePageBtn" src="..\Picture material\homePage.png" style="width:50px;
                                                                 height:50px;
                                                                 border:0px;">
         </button>
-        <button type="button" style="width: 50px;height: 50px;background-color:transparent;padding:0px;border-width:1px;" onclick="cart_page()">
+        <button type="button"
+            style="width: 50px;height: 50px;background-color:transparent;padding:0px;border-width:1px;"
+            onclick="cart_page()">
             <img id="cartPageBtn" src="..\Picture material\cart.png" style="width:50px;
             height:50px;
             margin:0 30px 0 0;
@@ -713,7 +847,7 @@
     }
     function dec() {
         const count = document.getElementById("count").innerHTML;
-        if (parseInt(count) > 1) {
+        if (parseInt(count) >= 1) {
             document.getElementById("count").innerHTML = parseInt(count) - 1;
         };
     }
@@ -824,6 +958,7 @@
         changeHomeGray();
         changeCartPurple();
         changePersonGray();
+        food_cart();
     }
 
     function user_page() {
@@ -857,6 +992,7 @@
             document.getElementById("marksBox").innerHTML = result.marks;
             document.getElementById("priceBox").innerHTML = "$" + result.price;
             document.getElementById("introBox").innerHTML = result.intro;
+            document.getElementById("count").innerHTML = result.count;
         } else {
             console.log('cant find');
         };
@@ -881,33 +1017,83 @@
     }
 
     function food_cart() {
+        document.getElementById("cartCloneContainer").innerHTML = "";
+        var totalPrice = 0;
+
         const result = itemArray.filter(itemFind => itemFind.count > 0);
 
+        for (i = 0; i < result.length; i++) {
+            clone("cartCloneContainer",
+                "cartClone", result[i].name + "clone", result[i].name, result[i].name, result[i].price, result[i].count, result[i].name);
+            document.getElementById(result[i].name + "clone").style.display = "block";
+            console.log(result[i].price);
+            console.log(result[i].count);
+            totalPrice = totalPrice + (result[i].price * result[i].count);
+        }
+
+        document.getElementById("cartPrice").innerHTML = "$" + parseInt(totalPrice);
         console.log(result);
     }
 
-    function changeHomePurple(){
-        document.getElementById("homePageBtn").src="../Picture material/homePagePurple.png";
+    function changeHomePurple() {
+        document.getElementById("homePageBtn").src = "../Picture material/homePagePurple.png";
     }
 
-    function changeHomeGray(){
-        document.getElementById("homePageBtn").src="../Picture material/homePage.png";
+    function changeHomeGray() {
+        document.getElementById("homePageBtn").src = "../Picture material/homePage.png";
     }
 
-    function changeCartPurple(){
-        document.getElementById("cartPageBtn").src="../Picture material/cartPurple.png";
+    function changeCartPurple() {
+        document.getElementById("cartPageBtn").src = "../Picture material/cartPurple.png";
     }
 
-    function changeCartGray(){
-        document.getElementById("cartPageBtn").src="../Picture material/cart.png";
+    function changeCartGray() {
+        document.getElementById("cartPageBtn").src = "../Picture material/cart.png";
     }
 
-    function changePersonPurple(){
-        document.getElementById("personPageBtn").src="../Picture material/personPurple.png";
+    function changePersonPurple() {
+        document.getElementById("personPageBtn").src = "../Picture material/personPurple.png";
     }
 
-    function changePersonGray(){
-        document.getElementById("personPageBtn").src="../Picture material/person.png";
+    function changePersonGray() {
+        document.getElementById("personPageBtn").src = "../Picture material/person.png";
+    }
+
+    function clone(containerId, cloneId, newId, newImg, newName, newPrice, newCount, newBtn) {
+        const container = document.getElementById(containerId);
+        const clone = document.getElementById(cloneId);
+
+        const cloneBox = clone.cloneNode(true);
+        cloneBox.setAttribute('id', newId);
+        container.appendChild(cloneBox);
+
+        document.getElementById("cartCloneImg").src = "..\\Picture material\\" + newImg + ".png";
+        document.getElementById("cartCloneImg").id = newImg + "Clone";
+
+        document.getElementById("cartCloneName").innerHTML = newName;
+        document.getElementById("cartCloneName").id = newName + "Clone";
+
+        document.getElementById("cartClonePrice").innerHTML = newPrice;
+        document.getElementById("cartClonePrice").id = newPrice + "Clone";
+
+        document.getElementById("cartCloneCount").innerHTML = newCount;
+        document.getElementById("cartCloneCount").id = newCount + "Clone";
+
+        document.getElementById("cartCloneBtn").id = newBtn;
+    }
+
+    function delClone(this_id) {
+        const result = itemArray.find(itemFind => itemFind.name === this_id);
+
+        if (result) {
+            result.count = 0;
+            console.log(result);
+        } else {
+            console.log('cant find');
+        };
+
+        const element = document.getElementById(this_id + "clone");
+        element.remove();
     }
 
 
