@@ -1,0 +1,52 @@
+Tasks-objectives & oveall to-do-list:
+
+1.1. Create basic wireframes for key app screens
+Sketch layouts for login and registration screens
+Design wireframes for restaurant listing and menu views
+Create wireframes for order placement and tracking screens
+Design user profile and settings screens
+
+1.2. Design overall visual style
+Define color palette and typography
+Create a basic style guide (logos, icons, buttons)
+Design app icon and splash screen
+
+Week 2-3 (12-10-24 to 25-10-24):
+
+2.1. Develop high-fidelity mockups for core screens
+Create detailed mockups for login and registration flows
+Design high-fidelity screens for restaurant browsing and search
+Develop mockups for menu viewing and item selection
+Create designs for order summary and checkout process
+Design order tracking and history screens
+
+2.2. Design essential user interfaces
+Refine registration and login UI with input fields and validation
+Develop UI components for restaurant cards and list views
+Create menu item cards and category navigation
+Design order placement flow with clear call-to-action buttons
+Develop intuitive UI for real-time order tracking
+
+Week 4 (26-10-24 to 30-10-24):
+
+3.1. Make final adjustments based on development progress
+Review implemented designs with the development team
+Make necessary adjustments to accommodate technical constraints
+Refine UI elements based on usability feedback
+
+3.2. Ensure design consistency across implemented features
+Conduct a design review of the implemented app
+Create a UI kit with reusable components
+Provide developers with final assets and specifications
+Document design decisions and guidelines for future reference
+
+
+LOG:
+Mike:
+1.1
+- Sketch layouts for login and registration screens
+- Design wireframes for restaurant listing and menu views
+1.2
+- Define color palette and typography
+- Create a basic style guide (logos, icons, buttons)
+- Design app icon and splash screen
