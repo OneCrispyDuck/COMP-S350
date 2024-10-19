@@ -1,0 +1,43 @@
+flowchart TD
+    MA[Mobile App] -->|HTTPS| LB[Load Balancer]
+    LB --> AG[API Gateway]
+    AG --> AS[Auth Service]
+    AG --> US[User Service]
+    AG --> RS[Restaurant Service]
+    AG --> OS[Order Service]
+    AG --> PS[Payment Service]
+    AG --> NS[Notification Service]
+
+    AS --> DB[(Database)]
+    US --> DB
+    RS --> DB
+    OS --> DB
+    PS --> DB
+
+    CL[(Cache Layer)] --> AS
+    CL --> US
+    CL --> RS
+    CL --> OS
+
+    PS --> PG[Payment Gateway]
+    NS --> PNS[Push Notification Service]
+
+    ML[Monitoring & Logging] --> AG
+    ML --> AS
+    ML --> US
+    ML --> RS
+    ML --> OS
+    ML --> PS
+    ML --> NS
+
+    FW[Firewall] --> LB
+
+    subgraph External Services
+        PG
+        PNS
+    end
+
+    subgraph Data Storage
+        DB
+        CL
+    end
