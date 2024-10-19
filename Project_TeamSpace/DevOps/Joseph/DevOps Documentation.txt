@@ -1,0 +1,2 @@
+Documentation your findings, requirments and system diagrams etc
+This is a safe folder away from the main folder.
