@@ -1,0 +1,64 @@
+DevOps Engineer (@DevOps Engineer)
+
+Week 1 (04-10-24 to 11-10-24):
+
+1.1. Set up version control and basic development environments
+Initialize Git repositories for backend and frontend projects
+Set up branching strategy (e.g., GitFlow)
+Configure Git hooks for code linting and formatting
+Create development environment setup scripts
+
+1.2. Plan simplified CI/CD pipeline
+Choose CI/CD tools (e.g., Jenkins, GitLab CI, or GitHub Actions)
+Design pipeline stages: build, test, deploy
+Plan for separate pipelines for backend and frontend
+
+Week 2-3 (12-10-24 to 25-10-24):
+
+2.1. Implement basic CI/CD pipeline
+Set up CI jobs for building and testing backend services
+Configure CI jobs for building and testing the mobile app
+Implement automated unit and integration tests in the pipeline
+Set up staging deployment jobs
+
+2.2. Set up essential cloud infrastructure
+Provision necessary cloud resources (e.g., EC2 instances, RDS)
+Set up container registry for Docker images
+Configure load balancers and auto-scaling groups
+Implement Infrastructure as Code using tools like Terraform
+
+2.3. Configure basic monitoring
+Set up application performance monitoring (e.g., New Relic, Datadog)
+Configure log aggregation system (e.g., ELK stack)
+Set up basic alerting for critical errors and performance issues
+
+Week 4 (26-10-24 to 30-10-24):
+
+3.1. Finalize deployment processes
+Implement blue-green deployment strategy
+Set up database migration jobs in the deployment pipeline
+Configure rollback procedures for failed deployments
+Document deployment processes and runbooks
+
+3.2. Ensure core security measures are in place
+Implement network security groups and firewall rules
+Set up SSL/TLS certificates for all endpoints
+Configure secrets management (e.g., AWS Secrets Manager, HashiCorp Vault)
+Implement basic intrusion detection and prevention measures
+
+3.3. Set up staging environment for final testing
+Create a staging environment that mirrors production
+Implement data sanitization for copying production data to staging
+Set up access controls for the staging environment
+Ensure monitoring and logging are properly configured in staging
+
+
+LOG:
+<name>
+	<section e.g. 1.1>
+		<specific name of task: e.g. Initialize Git repositories for backend and frontend projects>
+
+Joseph:
+	Section 1.1
+		- Initialize Git repositories for backend and frontend projects
+		- Set up branching strategy (e.g., GitFlow)
