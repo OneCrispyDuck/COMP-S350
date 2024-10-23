@@ -1,9 +1,9 @@
 # COMP-S350F
 Software Engineering: Year 3 CompSci Group Project.
 
-## Food Ordering & Tracking
+## Food Ordering & Tracking Application
 
-## Overview
+### Overview
 Food Ordering and Tracking App:
 This is a Software Engineering Project hosted by the Hong Kong Metropolitan Univeristy under the Bachelors of Science for Computer Science and Engineering majors.
 The scope of the project is for a team to practice the scope of engineering and it's requriements.
