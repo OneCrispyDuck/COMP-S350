@@ -589,7 +589,7 @@ function calculateTotal() {}
 - Use early returns to avoid deep nesting
 
 JavaScript Example:
-"""
+```bash
 // Good
 function validateUser(user) {
   if (!user) return false;
@@ -608,7 +608,7 @@ function validateUser(user) {
   }
   return false;
 }
-"""
+```
 
 ### 4. Comments and Documentation
 - Comment complex logic
@@ -616,7 +616,7 @@ function validateUser(user) {
 - Write self-documenting code
 
 JavaScript Example:
-'''
+```bash
 // Good - explains complex logic
 function calculateInterest(principal, rate, time) {
   // Using compound interest formula: A = P(1 + r/n)^(nt)
@@ -626,7 +626,7 @@ function calculateInterest(principal, rate, time) {
 // Bad - states the obvious
 // Loop through users
 for (const user of users) {
-'''
+```
 
 ### 5. Error Handling
 - Use try-catch blocks for error-prone code
@@ -634,7 +634,7 @@ for (const user of users) {
 - Provide meaningful error messages
 
 JavaScript Example:
-'''
+```bash
 try {
   await saveUserData(userData);
 } catch (error) {
@@ -644,11 +644,11 @@ try {
   });
   throw new Error('Unable to save user information');
 }
-'''
+```
 
 ### 6.Language Specific
 Java Example:
-'''
+```bash
 // 1. Use proper encapsulation
 public class User {
     private String name;
@@ -669,12 +669,12 @@ User user = User.builder()
 interface PaymentProcessor {
     void process(Payment payment);
 }
-'''
+```
 
 # Coding Formatting
 ## 1. Indentation and spacing
 JavaScript Example:
-'''
+```bash
 // Use consistent indentation (2 or 4 spaces)
 function example() {
   if (condition) {
@@ -687,11 +687,11 @@ if (condition) {
   // code
 }
 const sum = a + b;
-'''
+```
 
 ## 2. Line Length and Breaks
 JavaScript Example:
-'''
+```bash
 // Maximum line length: 80-100 characters
 const longString = 
   'This is a very long string that needs ' +
@@ -703,12 +703,12 @@ someFunction(
   longArgument2,
   longArgument3
 );
-'''
+```
 
 
 ## 3. Code Organization
 JavaScript Example:
-'''
+```bash
 // Group related code
 // Imports first
 import { Component } from 'framework';
@@ -742,7 +742,7 @@ class UserService {
     return user.name && user.age > 0;
   }
 }
-'''
+```
 
 ## 4. File Organisation
 ```bash
