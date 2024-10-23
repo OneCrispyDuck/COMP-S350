@@ -575,12 +575,12 @@ temp
 - Use UPPER_SNAKE_CASE for constants
 
 JavaScript Example:
-'''
+```bash
 const MAX_RETRY_ATTEMPTS = 3;
 let userData = {};
 class UserAuthentication {}
 function calculateTotal() {}
-'''
+```
 
 ### 3. Code Structure
 - One purpose per function
@@ -745,6 +745,7 @@ class UserService {
 '''
 
 ## 4. File Organisation
+```bash
 project/
 ├── src/
 │   ├── components/
@@ -757,6 +758,7 @@ project/
 │       └── [type].ts
 ├── tests/
 └── docs/
+```
 
 ## 5. Editor Configuration
 '''
