@@ -188,76 +188,21 @@
                     <img src="..\Picture material\promotion1.jpg" alt="Promotion 1">
                 </div>
             </div>
-
-            <!-- Chicken -->
-            <div class="Staple_Food" style="width:200px;height:100px;float:left">
-                <img src="..\Picture material\Chicken.png" style="width:100px;height:100px;float:left">
-                <div style="width:100px;height:100px;float:left">
-                    <p style="text-align: center;">Chicken</p>
-                    <button id="Chicken" type="button" style="background:#4caf50;float: right;"
-                        onclick="add_page(this.id)">+</button>
-                </div>
-            </div>
-            <!-- Coke -->
-            <div class="Drinks" style="width:200px;height:100px;float:left">
-                <img src="..\Picture material\Coke.png" style="width:100px;height:100px;float:left">
-                <div style="width:100px;height:100px;float:left">
-                    <p style="text-align: center;">Coke</p>
-                    <button id="Coke" type="button" style="background:#4caf50;float: right;"
-                        onclick="add_page(this.id)">+</button>
-                </div>
-            </div>
-
-            <div class="Dessert" style="width:200px;height:100px;float:left">
-                <img src="..\Picture material\Cake.png" style="width:100px;height:100px;float:left">
-                <div style="width:100px;height:100px;float:left">
-                    <p style="text-align: center;">Cake</p>
-                    <button id="Cake" type="button" style="background:#4caf50;float: right;"
-                        onclick="add_page(this.id)">+</button>
-                </div>
-            </div>
-            <div class="Staple_Food" style="width:200px;height:100px;float:left">
-                <img src="..\Picture material\Beef.png" style="width:100px;height:100px;float:left">
-                <div style="width:100px;height:100px;float:left">
-                    <p style="text-align: center;">Beef</p>
-                    <button id="Beef" type="button" style="background:#4caf50;float: right;"
-                        onclick="add_page(this.id)">+</button>
-                </div>
-            </div>
-            <div class="Dessert" style="width:200px;height:100px;float:left">
-                <img src="..\Picture material\Cheese.png" style="width:100px;height:100px;float:left">
-                <div style="width:100px;height:100px;float:left">
-                    <p style="text-align: center;">Cheese</p>
-                    <button id="Cheese" type="button" style="background:#4caf50;float: right;"
-                        onclick="add_page(this.id)">+</button>
-                </div>
-            </div>
-            <div class="Staple_Food" style="width:200px;height:100px;float:left">
-                <img src="..\Picture material\Lamb.png" style="width:100px;height:100px;float:left">
-                <div style="width:100px;height:100px;float:left">
-                    <p style="text-align: center;">Lamb</p>
-                    <button id="Lamb" type="button" style="background:#4caf50;float: right;"
-                        onclick="add_page(this.id)">+</button>
-                </div>
-            </div>
-            <div class="Drinks" style="width:200px;height:100px;float:left">
-                <img src="..\Picture material\WongWong.png" style="width:100px;height:100px;float:left">
-                <div style="width:100px;height:100px;float:left">
-                    <p style="text-align: center;">WongWong</p>
-                    <button id="WongWong" type="button" style="background:#4caf50;float: right;"
-                        onclick="add_page(this.id)">+</button>
-                </div>
-            </div>
-            <div class="Dessert" style="width:200px;height:100px;float:left">
-                <img src="..\Picture material\Cookie.png" style="width:100px;height:100px;float:left">
-                <div style="width:100px;height:100px;float:left">
-                    <p style="text-align: center;">Cookie</p>
-                    <button id="Cookie" type="button" style="background:#4caf50;float: right;"
-                        onclick="add_page(this.id)">+</button>
-                </div>
-            </div>
+			<div id="homeCloneContainer" style="width:400px;float:left">
+			
+			</div>
         </div>
     </div>
+	<!-- 被clone的 -->
+	<div id="homeClone" style="width:200px;height:100px;float:left;display:none">
+                <img id="homeCloneImg" src="..\Picture material\Chicken.png" style="width:100px;height:100px;float:left">
+                <div style="width:100px;height:100px;float:left">
+                    <p id="homeCloneNamePrice" style="text-align: center;">Chicken<br>Price</p>
+                    <button id="homeBtn" type="button" style="background:#4caf50;float: right;"
+                        onclick="add_page(this.id)">+</button>
+                </div>
+            </div>
+	<!-- 被clone的 -->
     <div id="addPage" style="background-color:#462b9c;height:843px;width:430px;display: none">
 
         <div style="background-color:#462b9c; 
@@ -275,7 +220,7 @@
                             border-width:0px;
 	                        outline:none;
                             " onclick="home_page()">
-                < </button>
+                </button>
                     <img id="circleImg" src="..\Picture material\All.png"
                         style="position: relative;left: 13%;top: 25%;height:210px;width:215px">
         </div>
@@ -353,7 +298,6 @@
                         border-style:inset;
                         ">
                 <label id="introBox" style="word-break: break-all;">
-                    shitshitshitshitshitshitshitshitshitshitshitshitshitshitshitshitshitshitshitshitshitshitshitshitshitshitshitshitshitshitshitshitshitshitshitshitshit
                 </label>
             </div>
             <div style="height: 90px;
@@ -381,7 +325,7 @@
                 width:430px;
                 display: inline-block
                 ">
-            <p style="font-size:20px;
+            <p id="howManyInCart" style="font-size:20px;
                     margin: 20px 0 0 20px">
                 2 Items in cart</p>
         </div>
@@ -474,15 +418,15 @@
             <div style="height: 110px;
                                 width:400px;
                                 ">
-                <button type="button" style=" height: 70px;
+                <button type="button" onclick="user_page()" style=" height: 70px;
                                         width: 300px;
                                         margin:10px 0 0 50px;
                                         border-radius:30px 30px 30px 30px;
                                         font-size:30px;
                                         background-color:purple;
+										color: #ffffff;
                                         ">
-                    <p style=" color: #ffffff;
-                               margin:0 0 5px 0; ">Order</p>
+						Order
                 </button>
             </div>
             <div style="height: 33px;
@@ -529,186 +473,51 @@
                 </div>
             </div>
         </div>
-        <div id="Order Menu" style="height: 450px;
-                                    width: 400px;
-                                    overflow: auto;
-                                    margin:0 15px 0 15px;
+		
+		<div id="userCloneContainer" style=" height:450px;
+                    width:400px;
+                    overflow:auto;
+                    margin:0 15px 0 15px;
+                ">
+
+        </div>
+		
+		<!-- 被clone的 -->
+        <div id="userClone" style=" height: 150px;
+                            width:400px;
+							display:none">
+            <img id="userCloneImg" src="..\Picture material\Cookie.png" style=" width:150px;
+                                    height:150px;
+                                    float:left;
                                     ">
-            <div style=" height:450px;
-            width:400px;
-            overflow:auto;
-            margin:0 15px 0 15px;
-        ">
-                <div style=" height: 150px;
-                    width:400px">
-                    <img src="..\Picture material\Cookie.png" style=" width:150px;
-                            height:150px;
-                            float:left;
-                            ">
-                    <div style="height: 150px;
-                        width:250px;
-                        float:left
-                        ">
-                        <div style="height: 150px;
-                            width:150px;
-                            float:left;
-                            ">
-                            <p style="margin: 30px 0 0 50px;">
-                                Cookie
-                            </p>
-                            <p style="margin: 10px 0 0 50px;">
-                                Price
-                            </p>
-                            <p style="margin: 10px 0 0 50px;">
-                                Number
-                            </p>
-                        </div>
-                        <div style="height: 150px;
-                            width:100px;
-                            float:left;
-                            ">
-                            <button type="button" style=" height: 30px;
-                                                width: 30px;
-                                                margin:60px 0 0 50px;
-                                                border-radius:50% 50% 50% 50%;
-                                                border-color:red;
-                                                font-size:20px;
-                                                color:red;
-                                                background-color:transparent;
-                                                ">
-                                X
-                            </button>
-                        </div>
-                    </div>
+            <div style="height: 150px;
+                                width:250px;
+                                float:left
+                                ">
+                <div style="height: 150px;
+                                    width:150px;
+                                    float:left;
+                                    ">
+                    <p id="userCloneName" style="margin: 30px 0 0 50px;">
+                        Cookie
+                    </p>
+                    <p id="userClonePrice" style="margin: 10px 0 0 50px;">
+                        Price
+                    </p>
+                    <p id="userCloneCount" style="margin: 10px 0 0 50px;">
+                        Number
+                    </p>
                 </div>
-                <div style=" height: 150px;
-                    width:400px">
-                    <img src="..\Picture material\Beef.png" style=" width:150px;
-                            height:150px;
-                            float:left;
-                            ">
-                    <div style="height: 150px;
-                        width:250px;
-                        float:left
-                        ">
-                        <div style="height: 150px;
-                            width:150px;
-                            float:left;
-                            ">
-                            <p style="margin: 30px 0 0 50px;">
-                                Beef
-                            </p>
-                            <p style="margin: 10px 0 0 50px;">
-                                Price
-                            </p>
-                            <p style="margin: 10px 0 0 50px;">
-                                Number
-                            </p>
-                        </div>
-                        <div style="height: 150px;
-                            width:100px;
-                            float:left;
-                            ">
-                            <button type="button" style=" height: 30px;
-                                                width: 30px;
-                                                margin:60px 0 0 50px;
-                                                border-radius:50% 50% 50% 50%;
-                                                border-color:red;
-                                                font-size:20px;
-                                                color:red;
-                                                background-color:transparent;
-                                                ">
-                                X
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div style=" height: 150px;
-                    width:400px">
-                    <img src="..\Picture material\Cake.png" style=" width:150px;
-                            height:150px;
-                            float:left;
-                            ">
-                    <div style="height: 150px;
-                        width:250px;
-                        float:left
-                        ">
-                        <div style="height: 150px;
-                            width:150px;
-                            float:left;
-                            ">
-                            <p style="margin: 30px 0 0 50px;">
-                                Cake
-                            </p>
-                            <p style="margin: 10px 0 0 50px;">
-                                Price
-                            </p>
-                            <p style="margin: 10px 0 0 50px;">
-                                Number
-                            </p>
-                        </div>
-                        <div style="height: 150px;
-                            width:100px;
-                            float:left;
-                            ">
-                            <button type="button" style=" height: 30px;
-                                                width: 30px;
-                                                margin:60px 0 0 50px;
-                                                border-radius:50% 50% 50% 50%;
-                                                border-color:red;
-                                                font-size:20px;
-                                                color:red;
-                                                background-color:transparent;
-                                                ">
-                                X
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div style=" height: 150px;
-                    width:400px">
-                    <img src="..\Picture material\Cheese.png" style=" width:150px;
-                            height:150px;
-                            float:left;
-                            ">
-                    <div style="height: 150px;
-                        width:250px;
-                        float:left
-                        ">
-                        <div style="height: 150px;
-                            width:150px;
-                            float:left;
-                            ">
-                            <p style="margin: 30px 0 0 50px;">
-                                Cheese
-                            </p>
-                            <p style="margin: 10px 0 0 50px;">
-                                Price
-                            </p>
-                            <p style="margin: 10px 0 0 50px;">
-                                Number
-                            </p>
-                        </div>
-                        <div style="height: 150px;
-                            width:100px;
-                            float:left;
-                            ">
-                            <button type="button" style=" height: 30px;
-                                            width: 30px;
-                                            margin:60px 0 0 50px;
-                                            border-radius:50% 50% 50% 50%;
-                                            border-color:red;
-                                            font-size:20px;
-                                            color:red;
-                                            background-color:transparent;
-                                            ">
-                                X
-                            </button>
-                        </div>
-                    </div>
+                <div style="height: 150px;
+                                    width:100px;
+                                    float:left;
+                                    ">
+
                 </div>
             </div>
         </div>
+        <!-- 被clone的 -->
+
         <div id="totalPrice&backToMenu" style="height: 160px;
                                                 width: 430px;">
             <div style="height: 110px;
@@ -730,10 +539,11 @@
                 width:200px;
                 float:left
                 ">
-                    <p style="height: 110px;
+                    <p id="userPrice" style="height: 110px;
                     width:200px;
                     margin:50px 0 0 60px;
                     font-size:30px;
+					color: #c9aa05;
                     ">
                         price
                     </p>
@@ -749,6 +559,7 @@
                                         border-width: 0px;
                                         outline:none;
                                         background-color:transparent;
+										display: none;
 										" onclick="home_page()" ;>
                     Back to Menu
                 </button>
@@ -757,89 +568,101 @@
     </div>
     <div id="btnBar"
         style="height: 80px;width: 430px;margin-bottom: auto;display:flex;justify-content:space-evenly;margin-top: 15px">
-        <button type="button"
+        <button id="homePageBtn" type="button"
             style="width: 50px;height: 50px;background-color:transparent;padding:0px;border-width:1px;"
             onclick="home_page()">
-            <img id="homePageBtn" src="..\Picture material\homePage.png" style="width:50px;
+            <img id="homePageBtnImg" src="..\Picture material\homePage.png" style="width:50px;
                                                                 height:50px;
                                                                 border:0px;">
         </button>
-        <button type="button"
+        <button id="cartPageBtn" type="button"
             style="width: 50px;height: 50px;background-color:transparent;padding:0px;border-width:1px;"
             onclick="cart_page()">
-            <img id="cartPageBtn" src="..\Picture material\cart.png" style="width:50px;
+            <img id="cartPageBtnImg" src="..\Picture material\cart.png" style="width:50px;
             height:50px;
             margin:0 30px 0 0;
             float:left">
         </button>
-        <button type="button" style="width: 50px;height: 50px;padding:0px;border-width:1px;" onclick="user_page()">
-            <img id="personPageBtn" src="..\Picture material\person.png" style="width:50px;
+        <button id="personPageBtn" type="button" style="width: 50px;height: 50px;padding:0px;border-width:1px;" onclick="user_page()" disabled=true>
+            <img id="personPageBtnImg" src="..\Picture material\person.png" style="width:50px;
             height:50px;
             float:left">
         </button>
     </div>
 </body>
 <script>
-    changeHomePurple();
-
-    var itemArray = [
+	var itemArray = [
         {
             name: 'Chicken',
             price: 100,
             marks: 4.5,
             intro: 'this is a chicken.',
-            count: 2
+            count: 0,
+			itemClass: 'Staple_Food'
         },
         {
             name: 'Coke',
             price: 20,
             marks: 4.5,
             intro: 'this is a coke.',
-            count: 0
+            count: 0,
+			itemClass: 'Drinks'
         },
         {
             name: 'Cake',
             price: 100,
             marks: 4.5,
             intro: 'this is a cake.',
-            count: 4
+            count: 0,
+			itemClass: 'Dessert'
+
         },
         {
             name: 'Beef',
             price: 150,
             marks: 4.5,
             intro: 'this is a beef.',
-            count: 0
+            count: 0,
+			itemClass: 'Staple_Food'
         },
         {
             name: 'Cheese',
             price: 50,
             marks: 4.5,
             intro: 'this is a cheese.',
-            count: 5
+            count: 0,
+			itemClass: 'Dessert'
         },
         {
             name: 'Lamb',
             price: 120,
             marks: 4.5,
             intro: 'this is a lamb.',
-            count: 0
+            count: 0,
+			itemClass: 'Staple_Food'
         },
         {
             name: 'WongWong',
             price: 10,
             marks: 4.5,
             intro: 'this is a WongWong drink.',
-            count: 0
+            count: 0,
+			itemClass: 'Drinks'
         },
         {
             name: 'Cookie',
             price: 30,
             marks: 4.5,
             intro: 'this is a cookie.',
-            count: 0
+            count: 0,
+			itemClass: 'Dessert'
         },
     ];
+	
+	let step = 0;
+	let intervalID;
+    changeHomePurple();
+	food_home();
 
     function insc() {
         const count = document.getElementById("count").innerHTML;
@@ -966,9 +789,16 @@
         document.getElementById("cartPage").style.display = "none";
         document.getElementById("userPage").style.display = "inline-block";
         document.getElementById("btnBar").style.display = "flex";
+		document.getElementById("homePageBtn").disabled = true;
+		document.getElementById("cartPageBtn").disabled = true;
         changeHomeGray();
         changeCartGray();
         changePersonPurple();
+		user_food();
+		
+		intervalID = setInterval(() => {
+				checkStep();
+			}, 3000);
     }
 
     function add_page(this_id) {
@@ -1015,16 +845,27 @@
             console.log('cant find');
         };
     }
+	
+	function food_home() {
+        document.getElementById("homeCloneContainer").innerHTML = "";
+        var totalPrice = 0;
+		
+        for (i = 0; i < itemArray.length; i++) {
+            homeClone("homeCloneContainer", "homeClone", itemArray[i].name, itemArray[i].name, itemArray[i].price, itemArray[i].itemClass);
+            document.getElementById(itemArray[i].name).style.display = "block";
+        }
+    }
 
     function food_cart() {
         document.getElementById("cartCloneContainer").innerHTML = "";
         var totalPrice = 0;
 
         const result = itemArray.filter(itemFind => itemFind.count > 0);
+		
+		document.getElementById("howManyInCart").innerHTML = result.length + " Items in cart";
 
         for (i = 0; i < result.length; i++) {
-            clone("cartCloneContainer",
-                "cartClone", result[i].name + "clone", result[i].name, result[i].name, result[i].price, result[i].count, result[i].name);
+            clone("cartCloneContainer", "cartClone", result[i].name + "clone", result[i].name, result[i].name, result[i].price, result[i].count, result[i].name);
             document.getElementById(result[i].name + "clone").style.display = "block";
             console.log(result[i].price);
             console.log(result[i].count);
@@ -1034,29 +875,66 @@
         document.getElementById("cartPrice").innerHTML = "$" + parseInt(totalPrice);
         console.log(result);
     }
+	
+	function user_food() {
+        document.getElementById("userCloneContainer").innerHTML = "";
+        var totalPrice = 0;
+
+        const result = itemArray.filter(itemFind => itemFind.count > 0);
+
+        for (i = 0; i < result.length; i++) {
+            user_clone("userCloneContainer", "userClone", result[i].name + "clone1", result[i].name, result[i].name, result[i].price, result[i].count);
+            document.getElementById(result[i].name + "clone1").style.display = "block";
+            console.log(result[i].price);
+            console.log(result[i].count);
+            totalPrice = totalPrice + (result[i].price * result[i].count);
+        }
+
+        document.getElementById("userPrice").innerHTML = "$" + parseInt(totalPrice);
+        console.log(result);
+    }
 
     function changeHomePurple() {
-        document.getElementById("homePageBtn").src = "../Picture material/homePagePurple.png";
+        document.getElementById("homePageBtnImg").src = "../Picture material/homePagePurple.png";
     }
 
     function changeHomeGray() {
-        document.getElementById("homePageBtn").src = "../Picture material/homePage.png";
+        document.getElementById("homePageBtnImg").src = "../Picture material/homePage.png";
     }
 
     function changeCartPurple() {
-        document.getElementById("cartPageBtn").src = "../Picture material/cartPurple.png";
+        document.getElementById("cartPageBtnImg").src = "../Picture material/cartPurple.png";
     }
 
     function changeCartGray() {
-        document.getElementById("cartPageBtn").src = "../Picture material/cart.png";
+        document.getElementById("cartPageBtnImg").src = "../Picture material/cart.png";
     }
 
     function changePersonPurple() {
-        document.getElementById("personPageBtn").src = "../Picture material/personPurple.png";
+        document.getElementById("personPageBtnImg").src = "../Picture material/personPurple.png";
     }
 
     function changePersonGray() {
-        document.getElementById("personPageBtn").src = "../Picture material/person.png";
+        document.getElementById("personPageBtnImg").src = "../Picture material/person.png";
+    }
+	
+	function homeClone(containerId, cloneId, newId, newName, newPrice, newClass) {
+        const container = document.getElementById(containerId);
+        const clone = document.getElementById(cloneId);
+
+        const cloneBox = clone.cloneNode(true);
+        cloneBox.setAttribute('id', newId);
+        container.appendChild(cloneBox);
+		
+		document.getElementById(newId).classList.add(newClass);
+
+        document.getElementById("homeCloneImg").src = "..\\Picture material\\" + newName + ".png";
+        document.getElementById("homeCloneImg").id = newName + "HomeClone";
+
+        document.getElementById("homeCloneNamePrice").innerHTML = newName + "<br>$" + newPrice;
+        document.getElementById("homeCloneNamePrice").id = newName + "HomeClone";
+		
+		document.getElementById("homeBtn").id = newName;
     }
 
     function clone(containerId, cloneId, newId, newImg, newName, newPrice, newCount, newBtn) {
@@ -1081,6 +959,27 @@
 
         document.getElementById("cartCloneBtn").id = newBtn;
     }
+	
+	function user_clone(containerId, cloneId, newId, newImg, newName, newPrice, newCount) {
+        const container = document.getElementById(containerId);
+        const clone = document.getElementById(cloneId);
+
+        const cloneBox = clone.cloneNode(true);
+        cloneBox.setAttribute('id', newId);
+        container.appendChild(cloneBox);
+
+        document.getElementById("userCloneImg").src = "..\\Picture material\\" + newImg + ".png";
+        document.getElementById("userCloneImg").id = newImg + "Clone";
+
+        document.getElementById("userCloneName").innerHTML = newName;
+        document.getElementById("userCloneName").id = newName + "Clone";
+
+        document.getElementById("userClonePrice").innerHTML = newPrice;
+        document.getElementById("userClonePrice").id = newPrice + "Clone";
+
+        document.getElementById("userCloneCount").innerHTML = newCount;
+        document.getElementById("userCloneCount").id = newCount + "Clone";
+    }
 
     function delClone(this_id) {
         const result = itemArray.find(itemFind => itemFind.name === this_id);
@@ -1094,8 +993,48 @@
 
         const element = document.getElementById(this_id + "clone");
         element.remove();
+		food_cart();
     }
-
+	
+	
+	
+	function checkStep(){
+		if (step < 5){
+			step = localStorage.getItem("step");
+			//console.log(step);
+			if (step == 2){
+				one2two();
+			} else if (step == 3){
+				two2three();
+			} else if (step == 4){
+				three2four();
+			}
+		} else {
+			four2five();
+			clearInterval(intervalID);
+			console.log("stop");
+		}
+	}
+	
+	function one2two() {
+			const step1 = document.getElementById("step1");
+			step1.classList.add('active');
+		}
+		
+	function two2three() {
+			const step2 = document.getElementById("step2");
+			step2.classList.add('active');
+		}
+		
+		function three2four() {
+			const step3 = document.getElementById("step3");
+			step3.classList.add('active');
+		}
+		
+		function four2five() {
+			const step4 = document.getElementById("step4");
+			step4.classList.add('active');
+		}
 
 </script>
 
