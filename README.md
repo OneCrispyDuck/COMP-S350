@@ -1,7 +1,7 @@
 # COMP-S350F
 Software Engineering: Year 3 CompSci Group Project.
 
-## Food Ordering & Tracking App
+## Food Ordering & Tracking
 
 ## Overview
 Food Ordering and Tracking App:
@@ -24,7 +24,7 @@ c) Software implementation
 d) Software validation/testing
 e) Software evolution 
 
-![https://github.com/OneCrispyDuck/COMP-S350/blob/main/COMP-S350-main/Picture%20material/Logo.jpg]
+![Project Logo/Screenshot](https://github.com/OneCrispyDuck/COMP-S350/blob/main/COMP-S350-main/Picture%20material/Logo.jpg)
 
 ## Table of Contents
 - [Features](#features)
