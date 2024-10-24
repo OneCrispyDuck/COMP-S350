@@ -1,4 +1,4 @@
-# Contributing to [Project Name]
+# Contributing to the ['Food Ordering & Tracking App'] project
 
 Thank you for your interest in contributing to our Software Engineering Year 3 CompSci Group Project: Food Ordering & Tracking App! This document provides guidelines and steps for contributing.
 
