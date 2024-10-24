@@ -23,7 +23,29 @@ Risk Analysis (P)
 - Implementation Phases (S)
 - Non-Functional Requirements (S)
 
-B. Non-Functional Requirements:
+
+Supporting:
+IMPLEMENTATION PHASES
+Phase 1:
+    - Basic user registration
+    - Restaurant listing
+    - Menu display
+    - Simple order placement
+
+Phase 2:
+    - Payment integration
+    - Order tracking
+    - Review system
+    - Restaurant dashboard
+
+Phase 3:
+    - Advanced features
+    - Analytics
+    - Optimization
+    - Scale-up
+
+
+Non-Functional Requirements:
     - Performance: Response time < 3 seconds
     - Security: Encrypted data transmission
     - Reliability: 99.9% uptime
@@ -37,7 +59,7 @@ B. Non-Functional Requirements:
 IN-DEBTH RESEARCH FOR SPECIFIC TOOLS & APIs:
 
 1.1. Design streamlined system architecture
-Create a high-level system architecture diagram✅
+Create a high-level system architecture diagram✅ //See Documentation < System Architecture Diagrams
 Define key components: API Gateway, Auth Service, Order Service, Restaurant Service
 Decide on communication patterns between services (RESTful, messaging)
 Choose appropriate data storage solutions (e.g., PostgreSQL for relational data, MongoDB for flexible schemas)

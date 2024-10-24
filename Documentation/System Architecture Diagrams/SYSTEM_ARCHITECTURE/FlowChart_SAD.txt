@@ -1,0 +1,96 @@
+flowchart TD
+    %% Client Layer
+    MA[Mobile Apps iOS/Android] -->|HTTPS| AG
+    WA[Web Application] -->|HTTPS| AG
+    RD[Restaurant Dashboard] -->|HTTPS| AG
+
+    %% API Gateway & Load Balancer
+    AG[API Gateway - Kong] -->|Load Balanced| SL[Service Layer]
+
+    %% Service Layer
+    subgraph SL[Service Layer]
+        AS[Auth Service<br>Node.js] 
+        US[User Service<br>Node.js]
+        RS[Restaurant Service<br>FastAPI]
+        OS[Order Service<br>Node.js]
+        PS[Payment Service<br>Node.js]
+        TS[Tracking Service<br>FastAPI]
+    end
+
+    %% Message Brokers
+    MQ[RabbitMQ] --> OS
+    KB[Kafka] --> TS
+
+    %% Data Layer
+    subgraph DL[Data Layer]
+        PG[(PostgreSQL<br>Primary DB)]
+        RD[(Redis Cache)]
+        MDB[(MongoDB<br>Reviews/Ratings)]
+        ES[(Elasticsearch<br>Search)]
+    end
+
+    %% Service to Database Connections
+    AS --> PG
+    AS --> RD
+    US --> PG
+    US --> RD
+    RS --> PG
+    RS --> ES
+    OS --> PG
+    OS --> MDB
+    PS --> PG
+    TS --> PG
+    TS --> RD
+
+    %% External Services
+    PS --> PGW[Payment Gateway]
+    TS --> GMS[Google Maps Service]
+
+    %% Infrastructure Layer
+    subgraph IL[AWS Infrastructure]
+        EC2[EC2 Instances]
+        ECS[ECS Containers]
+        S3[S3 Storage]
+        CF[CloudFront CDN]
+    end
+
+    %% DevOps & Monitoring
+    subgraph DO[DevOps Layer]
+        K8S[Kubernetes]
+        PRO[Prometheus]
+        GRF[Grafana]
+        ELK[ELK Stack]
+    end
+
+    %% Security Layer
+    subgraph SEC[Security]
+        WAF[Web Application Firewall]
+        SSL[SSL/TLS]
+        DDOS[DDoS Protection]
+    end
+
+    %% Connect Infrastructure
+    AG --> WAF
+    WAF --> SSL
+    SSL --> DDOS
+    DDOS --> SL
+
+    %% Monitoring Connections
+    PRO --> SL
+    PRO --> DL
+    GRF --> PRO
+    ELK --> SL
+
+    %% Style Definitions
+    classDef client fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    classDef service fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
+    classDef database fill:#e8f5e9,stroke:#1b5e20,stroke-width:2px
+    classDef infra fill:#fff3e0,stroke:#e65100,stroke-width:2px
+    classDef security fill:#ffebee,stroke:#b71c1c,stroke-width:2px
+
+    %% Apply Styles
+    class MA,WA,RD client
+    class AS,US,RS,OS,PS,TS service
+    class PG,RD,MDB,ES database
+    class EC2,ECS,S3,CF infra
+    class WAF,SSL,DDOS security

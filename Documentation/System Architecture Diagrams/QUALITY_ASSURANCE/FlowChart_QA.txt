@@ -1,0 +1,69 @@
+flowchart TD
+    %% Main QA Categories
+    subgraph QAMetrics["Quality Assurance Metrics"]
+        RT[Response Time]
+        OA[Order Accuracy]
+        US[User Satisfaction]
+        SU[System Uptime]
+        ER[Error Rates]
+    end
+
+    %% Response Time Details
+    subgraph ResponseTime["Response Time"]
+        RT_Metrics["Measurements<br>- API response<br>- Page load<br>- Order processing"]
+        RT_Targets["Targets<br>- API: <200ms<br>- Page: <2s<br>- Order: <30s"]
+        RT_Monitor["Monitoring<br>- Real-time tracking<br>- Performance alerts<br>- Trend analysis"]
+    end
+
+    %% Order Accuracy Details
+    subgraph OrderAccuracy["Order Accuracy"]
+        OA_Metrics["Measurements<br>- Order completion<br>- Item correctness<br>- Delivery accuracy"]
+        OA_Targets["Targets<br>- Complete: >99%<br>- Correct: >98%<br>- On-time: >95%"]
+        OA_Monitor["Monitoring<br>- Order tracking<br>- Error logging<br>- Customer feedback"]
+    end
+
+    %% User Satisfaction Details
+    subgraph UserSatisfaction["User Satisfaction"]
+        US_Metrics["Measurements<br>- App ratings<br>- Reviews<br>- Support tickets"]
+        US_Targets["Targets<br>- Rating: >4.5/5<br>- Reviews: >80% positive<br>- Resolution: <24h"]
+        US_Monitor["Monitoring<br>- Feedback analysis<br>- Satisfaction surveys<br>- Response time"]
+    end
+
+    %% System Uptime Details
+    subgraph SystemUptime["System Uptime"]
+        SU_Metrics["Measurements<br>- Server availability<br>- Service health<br>- API uptime"]
+        SU_Targets["Targets<br>- Uptime: >99.9%<br>- Availability: >99.99%<br>- Recovery: <15min"]
+        SU_Monitor["Monitoring<br>- Health checks<br>- Incident tracking<br>- Downtime analysis"]
+    end
+
+    %% Error Rates Details
+    subgraph ErrorRates["Error Rates"]
+        ER_Metrics["Measurements<br>- System errors<br>- Transaction fails<br>- API errors"]
+        ER_Targets["Targets<br>- System: <0.1%<br>- Transaction: <0.5%<br>- API: <1%"]
+        ER_Monitor["Monitoring<br>- Error logging<br>- Root cause analysis<br>- Resolution time"]
+    end
+
+    %% Relationships
+    RT --> RT_Metrics --> RT_Targets --> RT_Monitor
+    OA --> OA_Metrics --> OA_Targets --> OA_Monitor
+    US --> US_Metrics --> US_Targets --> US_Monitor
+    SU --> SU_Metrics --> SU_Targets --> SU_Monitor
+    ER --> ER_Metrics --> ER_Targets --> ER_Monitor
+
+    %% Quality Levels
+    subgraph QualityLevels["Quality Thresholds"]
+        Excellent["Exceeds Targets"]
+        Good["Meets Targets"]
+        NeedsImprovement["Below Targets"]
+    end
+
+    %% Styling
+    classDef category fill:#f9f9f9,stroke:#333,stroke-width:2px
+    classDef metrics fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
+    classDef targets fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+    classDef monitoring fill:#fff3e0,stroke:#e65100,stroke-width:2px
+
+    class RT,OA,US,SU,ER category
+    class RT_Metrics,OA_Metrics,US_Metrics,SU_Metrics,ER_Metrics metrics
+    class RT_Targets,OA_Targets,US_Targets,SU_Targets,ER_Targets targets
+    class RT_Monitor,OA_Monitor,US_Monitor,SU_Monitor,ER_Monitor monitoring

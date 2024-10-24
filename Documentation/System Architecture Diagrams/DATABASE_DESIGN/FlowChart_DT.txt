@@ -1,0 +1,53 @@
+flowchart TD
+    %% Database Tables
+    Users[(Users)]
+    Restaurants[(Restaurants)]
+    Menu[(Menu Items)]
+    Orders[(Orders)]
+    Reviews[(Reviews)]
+    OrderItems[(Order Items)]
+    Categories[(Categories)]
+    
+    %% Primary Relationships
+    Users -->|1:N| Orders
+    Users -->|1:N| Reviews
+    Restaurants -->|1:N| Menu
+    Restaurants -->|1:N| Orders
+    Restaurants -->|1:N| Reviews
+    Menu -->|1:N| OrderItems
+    Orders -->|1:N| OrderItems
+    Menu -->|N:1| Categories
+
+    %% Table Details
+    subgraph UsersTable[Users]
+        U_PK["PK: UserID<br>Name<br>Email<br>Password<br>Address<br>Phone"]
+    end
+
+    subgraph RestaurantsTable[Restaurants]
+        R_PK["PK: RestaurantID<br>Name<br>Address<br>Rating<br>Status"]
+    end
+
+    subgraph MenuTable[Menu]
+        M_PK["PK: ItemID<br>FK: RestaurantID<br>Name<br>Price<br>Category"]
+    end
+
+    subgraph OrdersTable[Orders]
+        O_PK["PK: OrderID<br>FK: UserID<br>FK: RestaurantID<br>Status<br>TotalAmount"]
+    end
+
+    %% Order Flow
+    subgraph OrderFlow[Order Process]
+        direction LR
+        Browse["Browse Menu"] --> 
+        Cart["Add to Cart"] -->
+        Checkout["Checkout"] -->
+        Pay["Payment"] -->
+        Track["Track Order"]
+    end
+
+    %% Styling
+    classDef table fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    classDef process fill:#fff3e0,stroke:#e65100,stroke-width:2px
+
+    class Users,Restaurants,Menu,Orders,Reviews,OrderItems,Categories table
+    class Browse,Cart,Checkout,Pay,Track process

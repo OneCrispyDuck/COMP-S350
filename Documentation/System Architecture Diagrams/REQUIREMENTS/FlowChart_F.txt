@@ -1,0 +1,85 @@
+flowchart TD
+    %% Entry Points
+    WA[Web App] -->|HTTPS| LB[Load Balancer]
+    MA[Mobile App] -->|HTTPS| LB
+    RD[Restaurant Dashboard] -->|HTTPS| LB
+
+    %% Security Layer
+    LB --> FW[Firewall]
+    FW --> AG[API Gateway]
+
+    %% Core Services
+    AG --> AS[Auth Service]
+    AG --> US[User Service]
+    AG --> RS[Restaurant Service]
+    AG --> OS[Order Service]
+    AG --> PS[Payment Service]
+    AG --> TS[Tracking Service]
+    AG --> NS[Notification Service]
+    AG --> RVS[Review Service]
+    AG --> SS[Search Service]
+
+    %% Data Layer
+    AS --> DB[(Main Database)]
+    US --> DB
+    RS --> DB
+    OS --> DB
+    PS --> DB
+    TS --> DB
+    RVS --> DB
+
+    %% Cache Layer
+    CL[(Cache Layer)] --> SS
+    CL --> RS
+    CL --> OS
+    CL --> TS
+
+    %% External Integrations
+    PS --> PG[Payment Gateway]
+    NS --> PNS[Push Notifications]
+    NS --> ES[Email Service]
+    NS --> SMS[SMS Gateway]
+    TS --> GMS[Google Maps Service]
+
+    %% Search Engine
+    SS --> SE[(Search Engine)]
+    
+    %% Message Queue
+    MQ[Message Queue] --> OS
+    MQ --> NS
+    MQ --> TS
+
+    %% Monitoring
+    ML[Monitoring & Logging] --> AG
+    ML --> AS
+    ML --> US
+    ML --> RS
+    ML --> OS
+    ML --> PS
+    ML --> TS
+    ML --> NS
+    ML --> RVS
+    ML --> SS
+
+    %% Subgraphs
+    subgraph External Services
+        PG
+        PNS
+        ES
+        SMS
+        GMS
+    end
+
+    subgraph Data Storage
+        DB
+        CL
+        SE
+    end
+
+    subgraph Message Processing
+        MQ
+    end
+
+    %% Service Definitions
+    classDef service fill:#f9f,stroke:#333,stroke-width:2px
+    class AS,US,RS,OS,PS,TS,NS,RVS,SS service

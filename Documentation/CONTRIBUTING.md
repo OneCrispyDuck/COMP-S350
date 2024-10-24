@@ -574,7 +574,7 @@ temp
 - Use PascalCase for classes
 - Use UPPER_SNAKE_CASE for constants
 
-JavaScript Example:
+JavaScript Example: 
 ```bash
 const MAX_RETRY_ATTEMPTS = 3;
 let userData = {};
