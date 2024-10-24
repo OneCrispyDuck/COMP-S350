@@ -1,0 +1,45 @@
+API SPECIFICATION
+
+1. ENDPOINT DETAILS
+   URL: [endpoint-url]
+   Method: [GET/POST/PUT/DELETE]
+   Authentication: [auth-type]
+
+2. REQUEST FORMAT
+   Headers:
+   {
+     "Content-Type": "application/json",
+     "Authorization": "Bearer {token}"
+   }
+
+   Body:
+   {
+     "field1": "type & description",
+     "field2": "type & description"
+   }
+
+3. RESPONSE FORMAT
+   Success Response:
+   Status Code: 200
+   {
+     "status": "success",
+     "data": {
+       // response fields
+     }
+   }
+
+   Error Response:
+   Status Code: [error-code]
+   {
+     "status": "error",
+     "message": "error description"
+   }
+
+4. EXAMPLE
+   Request Example:
+   Response Example:
+
+5. NOTES
+   - Rate limits
+   - Dependencies
+   - Special considerations

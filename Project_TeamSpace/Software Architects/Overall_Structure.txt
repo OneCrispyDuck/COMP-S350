@@ -1,4 +1,40 @@
-Same note pasted from our discord channel
+THIS FOLDER IS FOR THE FOLLOWING MEMEBERS
+- JOSEPH
+- COLIN
+- GABRIEL
+- DON
+
+SOFTWARE ARCHITECTS
+Primary Responsibilities:
+
+System Architecture (P)
+    - Overall system design
+    - Technology stack selection
+    - Integration patterns
+    - Scalability planning
+Database Design (P)
+    - Schema design
+    - Data relationships
+    - Performance optimization
+Risk Analysis (P)
+    - Technical risk assessment
+    - Architecture-related risks
+    - Supporting:
+- Implementation Phases (S)
+- Non-Functional Requirements (S)
+
+B. Non-Functional Requirements:
+    - Performance: Response time < 3 seconds
+    - Security: Encrypted data transmission
+    - Reliability: 99.9% uptime
+    - Usability: Intuitive interface
+    - Scalability: Handle multiple concurrent users
+    - Privacy: User data protection
+
+
+
+------------------------------------------------------
+IN-DEBTH RESEARCH FOR SPECIFIC TOOLS & APIs:
 
 1.1. Design streamlined system architecture
 Create a high-level system architecture diagram✅
