@@ -8,7 +8,7 @@ Please use https://mermaid.live/ as an example if needed.
 
 Good luck team!
 
-# UI/UX Specification
+# UI/UX Specification - User Login/Registration page
 
 ## 1. Component Overview
 

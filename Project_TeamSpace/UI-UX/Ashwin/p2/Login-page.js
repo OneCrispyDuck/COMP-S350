@@ -5,9 +5,9 @@ const signUpForm=document.getElementById('signUp');
 
 signUpButton.addEventListener('click',function(){
     signInForm.style.display="none";
-    signUpForm.style.display="block";
+    signUpForm.style.display="flex";
 })
 signInButton.addEventListener('click', function(){
-    signInForm.style.display="block";
+    signInForm.style.display="flex";
     signUpForm.style.display="none";
 })
