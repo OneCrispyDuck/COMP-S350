@@ -55,7 +55,7 @@ body {
 .input-group i {
     position: absolute;
     left: 10px;
-    top: 50%;
+    top: 35%;
     transform: translateY(-50%);
     color: black;
     font-size: 1.2rem;
