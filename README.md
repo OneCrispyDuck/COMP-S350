@@ -81,7 +81,7 @@ npm run dev
 
 ### Usage
 1. User Registration/Login
-    - Create account 
+    - Create account and login
     - Complete profile with delivery details
 2. Restaurant Access
     - Browse restaurants by location/cuisine
