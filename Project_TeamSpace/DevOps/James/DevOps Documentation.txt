@@ -1,2 +1,23 @@
-Documentation your findings, requirments and system diagrams etc
-This is a safe folder away from the main folder.
+Key Points
+Proactive Monitoring: Alerts for system anomalies.
+Centralized Logging: Simplifies troubleshooting and auditing.
+Performance Metrics: Helps in optimizing application performance.
+
+Security Measures
+Secure Communication: All API endpoints use HTTPS.
+Input Validation: Prevents SQL injection and XSS attacks.
+Secrets Management: Sensitive data is stored securely using AWS Secrets Manager.
+
+Incident Response Plan
+Steps to Handle Incidents
+Detection: Monitoring tools alert the team.
+Assessment: Determine the impact and severity.
+Response:
+Immediate Actions: Mitigate the issue (e.g., rollback deployment).
+Communication: Inform stakeholders.
+Resolution: Fix the underlying problem.
+Post-Incident Review: Analyze the incident to prevent future occurrences.
+Key Points
+Preparedness: Documentation ensures quick response.
+Responsibility Assignment: Clear roles for team members during incidents.
+Continuous Improvement: Learn from incidents to enhance system robustness.
