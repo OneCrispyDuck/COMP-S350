@@ -16,8 +16,8 @@
 5. [Testing the Coupon System](#testing-the-coupon-system)
 6. [Deployment Instructions](#deployment-instructions)
 7. [Future Enhancements](#future-enhancements)
-8. [Sequence Diagram Generation](#sequence-diagram-generation)
-9. [Conclusion](#conclusion)
+8. [Sequence Diagram](#Sequence-Diagram)
+
 
 ---
 
@@ -486,5 +486,12 @@ mongoose.connect('your-mongodb-connection-string', {
   - Automate the creation of unique coupon codes with customizable rules.
 - **Analytics and Reporting**
   - Track coupon usage statistics for business insights.
+
+---
+
+## Sequence-Diagram
+To visualize the coupon system's flow, refer to the sequence diagram below:
+
+![Sequence Diagram](.coupon_system_SequenceDiagram.png)
 
 ---
