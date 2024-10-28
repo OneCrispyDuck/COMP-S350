@@ -492,6 +492,6 @@ mongoose.connect('your-mongodb-connection-string', {
 ## Sequence-Diagram
 To visualize the coupon system's flow, refer to the sequence diagram below:
 
-![Sequence Diagram](.coupon_system_SequenceDiagram.png)
+![Sequence Diagram](./coupon_system_SequenceDiagram.png)
 
 ---
