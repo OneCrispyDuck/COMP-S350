@@ -24,7 +24,7 @@ c) Software implementation
 d) Software validation/testing
 e) Software evolution 
 
-![Project Logo/Screenshot](https://github.com/OneCrispyDuck/COMP-S350/blob/main/COMP-S350-main/Picture%20material/Logo.jpg)
+![Project Logo/Screenshot](https://github.com/OneCrispyDuck/COMP-S350/blob/main/src/COMP-S350-main/Picture%20material/Logo.png?raw=true)
 
 ## Table of Contents
 - [Features](#features)
