@@ -35,6 +35,7 @@
                 </div>
                 <div>
                     <input type="submit" class="btn" value="Sign Up" name="signUp">
+                    <!-- <button class="btn">Sign Up</button> -->
                 </div>
             </form>
             <p class="or">----------or-----------</p>
@@ -46,7 +47,7 @@
     
         <div class="container" id="signIn">
             <h1 class="form-title">Login</h1>
-            <form method="post" action="">
+            <form id="loginForm" method="post" action="#">
                 <div class="input-group">
                     <i class="fas fa-envelope"></i>
                     <input type="email" name="email" id="emailLogin" required>
@@ -54,14 +55,17 @@
                 </div>
                 <div class="input-group">
                     <i class="fas fa-lock"></i>
-                    <input type="password" name="password" id="passwordLogin">
+                    <input type="password" name="password" id="passwordLogin" required>
                     <label for="passwordLogin">Password</label>
                 </div>
                 <p class="recover">
                     <a href="#">Forgot Password?</a>
                 </p>
                 <div>
-                    <input type="submit" class="btn" value="Login" name="login">  
+                    
+                    <input type="submit" id="login-button" value="Login" name="login">  
+                    <!-- <button id="login-button">Login</button> -->
+                    
                 </div>
             </form>
             <p class="or">----------or-----------</p>

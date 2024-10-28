@@ -98,7 +98,7 @@ input:not(:placeholder-shown) ~ label {
     font-weight: bold;
 }
 
-.btn {
+.btn, #login-button {
     font-size: 1.1rem;
     padding: 8px 0;
     border-radius: 5px;
@@ -117,7 +117,7 @@ input:not(:placeholder-shown) ~ label {
     margin-bottom: 1.5rem;
 }
 
-.btn:hover {
+.btn:hover, #login-button:hover {
     background: #7868ab;
 }
 
