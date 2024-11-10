@@ -2,10 +2,12 @@
 ## Group Project Unit Testing Documentation
 
 ### 1. Project Overview
-- Brief description of your group project
-- Identify the specific component/unit being tested
-- List team members and their roles in testing
-- Brief description of the component being tested
+- **Project**: Food Ordering and Tracking App
+- **Component Being Tested**: Store Management System and User Authentication
+- **Team Roles in Testing**:
+  - Frontend Testing: User interface and form validation
+  - Store Logic Testing: Cart functionality and item management
+  - Integration Testing: API endpoints and data flow
 
 ### 2. Unit Testing Framework
 
