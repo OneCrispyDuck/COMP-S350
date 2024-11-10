@@ -7,12 +7,84 @@
 - List team members and their roles in testing
 - Brief description of the component being tested
 
-
 ### 2. Unit Testing Framework
-- Specify which testing framework you're using (e.g., JUnit, PyTest, etc.)
-- Justify why this framework was chosen
-- Brief explanation of the framework's key features
-- Description of testing environment setup
+
+1. Why Jest was Chosen
+Jest is chosen as the testing framework for this project because of the following reasons:
+
+Ease of Use: Jest is simple to set up and use. It has built-in support for many features like mocking, assertions, and running tests in parallel, making it a good choice for both beginners and experienced developers.
+Integrated with JavaScript Ecosystem: Jest is specifically designed for testing JavaScript applications, especially those using frameworks like React, Node.js, or vanilla JavaScript. It seamlessly integrates with the JavaScript ecosystem and has a large
+
+2. Key Features of Jest
+
+Fast and Parallelized: Jest runs tests in parallel, speeding up the test execution, especially in large codebases. It uses worker processes to run tests concurrently.
+Snapshot Testing: Jest’s snapshot feature allows you to capture the output of a component or function and compare it to a stored version. This is particularly useful for UI testing, ensuring that the rendered output remains consistent over time.
+Built-in Mocking: Jest provides built-in mocking capabilities, which allow you to mock functions, modules, and timers. This makes it easy to isolate the code under test and simulate different conditions.
+
+
+
+###testing environment setup
+
+![image](https://github.com/user-attachments/assets/4adc0f54-fb11-44d0-a56b-ec111828d432)
+
+Step 1: Install Node.js
+If you haven't already installed Node.js, download and install it from the official Node.js website:
+
+After installation, you can verify that Node.js and npm were installed correctly by running the following commands in your terminal:
+
+```Bash
+node -v
+npm -v
+
+```
+Step 2: Initialize Your Project (if not already)
+If your project doesn't have a package.json file yet, you'll need to initialize it. Run the following command in the root directory of your project:
+
+```Bash
+npm init -y
+
+```
+
+Step 3: Install Jest
+To set up Jest for testing, install it as a development dependency:
+
+```bash
+
+npm install --save-dev jest
+```
+Alternatively, if you're using Yarn:
+
+```
+yarn add --dev jest
+```
+
+Step 4: Configure Jest in package.json
+Once Jest is installed, you can add a script to run your tests easily using npm. Open your package.json file and add the following under "scripts":
+
+```
+{
+  "scripts": {
+    "test": "jest"
+  }
+}
+```
+
+Step 5: Organize Your Test Files
+For Jest to run your tests, you need to place your test files in the correct locations. The following are common conventions:
+
+Test file naming: Jest automatically detects files ending with .test.js or .spec.js.
+Folder structure: You can place your test files alongside the code you're testing or in a separate __tests__ directory.
+
+Step 6: Write Your Tests
+Make sure you have test files set up properly. For example, you might have a store.test.js file testing the logic in store.js:
+
+Step 7: Run Your Tests
+Once everything is set up, you can run your tests using the following command:
+
+```
+npm test
+```
+
 
 ### 3. Component Under Test
 ```Java
@@ -85,7 +157,7 @@ describe('Store functionality', () => {
 });
 ```
 
-Test Case 1: User Registration Validation
+###Test Case 1: User Registration Validation
 
 Purpose: Ensure that the user registration system only allows valid input and properly creates user accounts.
 Input: Username, email, and password combinations, including valid and invalid data.
@@ -94,7 +166,7 @@ Testing Method: Try registering with various combinations of input including val
 Validation: Check for confirmation of account creation or error messages as per input validation rules.
 
 
-Test Case 2: Password Reset Functionality
+###Test Case 2: Password Reset Functionality
 
 Purpose: Validate that users can reset their password using a valid email and receive a password reset link.
 Input: Email address (valid and invalid).
@@ -103,7 +175,7 @@ Testing Method: Submit both valid and invalid email addresses and monitor system
 Validation: Verify if reset email is received or if the appropriate error message is returned for invalid inputs.
 
 
-Test Case 3: Cart Checkout Process
+###Test Case 3: Cart Checkout Process
 
 Purpose: Ensure that the cart checkout process functions correctly with valid payment information.
 Input: Valid and invalid credit card details, product items in the cart.
@@ -112,7 +184,7 @@ Testing Method: Perform the checkout process with different sets of payment deta
 Validation: Verify that the system completes the purchase or returns an error message based on the validity of the payment information.
 
 
-Test Case 4: Search Functionality
+###Test Case 4: Search Functionality
 
 Purpose: Validate that the search functionality returns relevant results based on the user's query.
 Input: Search queries (valid, invalid, edge cases like special characters).
@@ -121,7 +193,7 @@ Testing Method: Perform searches with various inputs and observe search results.
 Validation: Check if the results correspond to the search query or if an appropriate error message is displayed.
 
 
-Test Case 5: User Login Validation
+###Test Case 5: User Login Validation
 
 Purpose: Verify that users can only log in with valid credentials.
 Input: Username and password combinations.
@@ -132,8 +204,8 @@ Validation: Check system response and access status.
 
 
 
-5. Testing Strategy
-6. 
+###5. Testing Strategy
+   
 Description of testing approach: We employ both manual and automated testing. Unit tests are written to test individual components of the system, while integration tests ensure that all components work together as expected. Functional testing is carried out to validate that the system meets the functional requirements.
 
 Test case selection criteria: Test cases are selected based on critical user interaction points (e.g., login, registration, checkout) and areas prone to user errors (e.g., invalid input handling, form validation). Edge cases like empty inputs, invalid formats, and incorrect data types are also tested.
@@ -150,7 +222,7 @@ SQL injection or XSS attacks in search and form submissions.
 Test coverage goals: Achieve 90% test coverage for critical user flows (e.g., login, registration, checkout). Ensure that key edge cases and failure scenarios are covered.
 
 
-8. Test Results
+### Test Results
    
 Summary of test execution:
 Total test cases executed: 25
@@ -166,15 +238,16 @@ User login: Failed (2/6 test cases)
 
 
 Screenshots of test results:
-(Add screenshots here if applicable; for example, failed login attempts with invalid credentials.)
+![image](https://github.com/user-attachments/assets/6fb799cd-79b9-4855-9d3b-653ce937e3e8)
 
 
-Issues discovered:
+
+### Issues discovered:
 Issue 1: Login validation incorrectly allowed login with invalid passwords in 2 out of 6 test cases due to improper password hashing.
 Issue 2: Search functionality occasionally returned irrelevant results for certain edge case queries like special characters.
 
 
-10. Lessons Learned
+ Lessons Learned
 Challenges encountered:
 
 Handling edge cases for input validation was more complex than initially expected, especially with special characters and large input sizes.
